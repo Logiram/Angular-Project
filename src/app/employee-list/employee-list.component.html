@@ -1,0 +1,19 @@
+<h2> Employee List</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> ID </th>
+            <th> Title </th>
+            <th> Body </th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let employee of employees" >
+            <td> {{ employee.id }} </td>
+            <td> {{ employee.title }} </td>
+            <td> {{ employee.body }} </td>
+           
+        </tr>
+    </tbody>
+</table>
